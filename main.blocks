@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="-M8S1nb7![EsBrBD6Bk:">Player</variable><variable type="KIND_SpriteKind" id="zu/%W*KoHm`,t^%;qDLc">Projectile</variable><variable type="KIND_SpriteKind" id="lrK0JPimjaP#Ozw|EnLq">Food</variable><variable type="KIND_SpriteKind" id="]eJ]dlrfeE?s46})dtdc">Enemy</variable><variable id="S=[N]Fa|%3,$L).=8-V;">Hose</variable><variable id="RW|0C$dTNScz*fTXcR)?">mySprite</variable><variable id="]1VVDv:v/GYdAcL$T}^)">projectile</variable><variable id="n0GK^9h/6;XNOdv.~O*7">projectile2</variable><variable id="x06Hc*D.gK!p$tzK4f7r">otherSprite</variable></variables><block type="spritesoverlap" x="710" y="-470"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value><statement name="HANDLER"><block type="hudChangeScoreBy"><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></statement></block><block type="pxt-on-start" x="24" y="-393"><statement name="HANDLER"><block type="function_call"><mutation name="Player" functionid="u=4b!i4tRmgq,2rK}:A;"/></block></statement></block><block type="function_definition" x="330" y="-390"><mutation name="Player" functionid="u=4b!i4tRmgq,2rK}:A;"/><field name="function_name"/><statement name="STACK"><block type="variables_set"><field name="VAR" id="S=[N]Fa|%3,$L).=8-V;">Hose</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+9 9 d 7 7 7 7 7 7 7 7 7 7 7 7 7 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="S=[N]Fa|%3,$L).=8-V;">Hose</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">100</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="S=[N]Fa|%3,$L).=8-V;">Hose</field></block></value></block></next></block></next></block></statement></block><block type="gameupdate" x="50" y="-210"><statement name="HANDLER"><block type="function_call"><mutation name="Projectile" functionid="8SJ0p,@4;telujdhx[}W"/></block></statement></block><block type="function_definition" x="330" y="-90"><mutation name="Projectile" functionid="8SJ0p,@4;telujdhx[}W"/><field name="function_name">Projectile</field><statement name="STACK"><block type="variables_set"><field name="VAR" id="]1VVDv:v/GYdAcL$T}^)">projectile</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . 9 9 9 9 9 . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></block></value><value name="sprite"><block type="variables_get"><field name="VAR" id="S=[N]Fa|%3,$L).=8-V;">Hose</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="]1VVDv:v/GYdAcL$T}^)">projectile</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block></xml>
