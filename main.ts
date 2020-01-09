@@ -1,4 +1,4 @@
-function Player () {
+function hose () {
     Hose = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -20,7 +20,7 @@ function Player () {
     Hose.setPosition(80, 100)
     controller.moveSprite(Hose)
 }
-function Projectile () {
+function Projectile2 () {
     projectile = sprites.createProjectileFromSprite(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -46,7 +46,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 })
 let projectile: Sprite = null
 let Hose: Sprite = null
-Player()
+hose()
 game.onUpdate(function () {
-    Projectile()
+    Projectile2()
 })
